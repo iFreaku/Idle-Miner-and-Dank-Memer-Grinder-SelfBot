@@ -7,7 +7,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-	return f'<h1>Grinder Selfbot Is Ready</h1><h2><u>Extras</u></h2>Dragon SMP Bot: <a href="https://dsc.lol/dragonsmp-bot">Invite</a><br>Dragon SMP Bot Website: <a href="https://dragonsmp.glique.repl.co">Go to Website</a><br><hr>               <code>-made by iFreaku</code>'
+	return f'<h1>Grinder Selfbot Is Ready</h1><h2><u>Extras</u></h2>Dragon SMP Bot: <a href="https://dsc.lol/dragonsmp-bot">Invite</a><br>Dragon SMP Bot Website: <a href="https://dragonsmp.glique.repl.co">Go to Website</a><br><hr>Any issues then Contact me on Instagram<br><a href="https://www.instagram.com/ifreakuyt/">iFreaku on Instagram</a><br><code>-made by iFreaku</code>
 
 def run():
   app.run(
