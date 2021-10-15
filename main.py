@@ -284,7 +284,7 @@ async def help_miner(ctx):
 
   x.add_field(name="Auto Commands Stop", value=f"`{prefix}sellstop`- Stops Auto seller\n`{prefix}huntstop`- Stops Auto Hunter\n`{prefix}fishstop`- Stops Auto Fisher\n`{prefix}ragestop`- Stops Auto Rage\n`{prefix}wingsstop`- Stops Auto Wings\n`{prefix}eqstop`- Stops Auto EarthQuack")
 
-  x.add_field(name="Utility", value=f"`{prefix}uptime`- To see the bot's uptime.", inline=False)
+  x.add_field(name="Utility", value=f"`{prefix}uptime`- To see the bot's uptime.\n`{prefix}shutdown` - Shutdown the selfbot.", inline=False)
 
   x.set_thumbnail(url="https://images-ext-2.discordapp.net/external/v7VTbPzY3dwfAhBzVuVutFPVXpOsA14f2CbyaIsZwE4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/875195631243763712/6db61ff071881278d6558ce6d3fc82b2.webp")
   await ctx.send(embed=x)
@@ -315,7 +315,7 @@ async def help_dank(ctx):
   x.add_field(name="Auto Commands", value=f"`{prefix}dankhunt`- Auto Hunter\n`{prefix}dankfish`- Auto Fisher\n`{prefix}dankdig`- Auto digger")
 
   x.add_field(name="Auto Commands Stop", value=f"`{prefix}dankhunt_off`- Stops Auto Hunter\n`{prefix}dankfish_off`- Stops Auto Fisher\n`{prefix}dankdig_off`- Stops Auto Digger")
-  x.add_field(name="Utility", value=f"`{prefix}uptime`- To see the bot's uptime.", inline=False)
+  x.add_field(name="Utility", value=f"`{prefix}uptime`- To see the bot's uptime.\n`{prefix}shutdown` - Shutdown the selfbot.", inline=False)
   x.set_thumbnail(url="https://images-ext-2.discordapp.net/external/v7VTbPzY3dwfAhBzVuVutFPVXpOsA14f2CbyaIsZwE4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/875195631243763712/6db61ff071881278d6558ce6d3fc82b2.webp")
   await ctx.send(embed=x)
 
@@ -387,6 +387,14 @@ async def dankfish(ctx):
 			await miner.get_channel(miner.dankfish_channel).send(
 			  'pls fish')
 			await asyncio.sleep(41)
+			
+#-----SHUTDOWN THE SELFBOT---------#
+
+@miner.command(aliases=["logout"])
+async def shutdown(ctx):
+	await ctx.message.delete()
+	await miner.logout()
+
 
 if __name__ == '__main__':
 	Init()      
