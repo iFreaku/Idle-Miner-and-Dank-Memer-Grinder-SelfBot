@@ -7,3 +7,7 @@ Best for Hunting and Fishing in idle miner.
 If any issue then contact me on Instagram<br>
 **Instagram:** [iFreaku (@ifreakuyt)](https://www.instagram.com/ifreakuyt/)
 
+# UPDATE
+### SHUTDOWN COMMAND
+> Shutdown the selfbot
+---
